@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+import java.util.Scanner;
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int intValue = scanner.nextInt();
+
+        
+        float floatValue = scanner.nextFloat();
+
+       
+        System.out.println(intValue);
+
+     
+        System.out.printf("%.2f%n", floatValue);
+
+        scanner.close();
+    }
+}
+
