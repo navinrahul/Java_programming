@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+
+public class AlicePath {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(); 
+        sc.close();
+
+        int tens = n / 10;
+        int units = n % 10;
+        int sum = tens + units;
+
+        System.out.println("Bird said:" + n);
+        System.out.println("Alice must go in path-" + sum);
+        }
+        }
+
