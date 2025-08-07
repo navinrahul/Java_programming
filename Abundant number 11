@@ -1,54 +1,16 @@
-HackerRank Home
-HackerRank
-|
-Prepare
-Certify
-Compete
-Apply
-Search
-2
- 
-All Contests  looping-statement-java  Abundant number 11
-Abundant number 11
-Problem
-Submissions
-Leaderboard
-Discussions
-Submitted a few seconds ago • Score: 10.00Status: Accepted
- Test Case #0
- Test Case #1
- Test Case #2
- Test Case #3
 
-Submitted Code
-Language: Java 7
-
- Open in editor
-1
 import java.io.*;
-2
 import java.util.*;
-3
 import java.text.*;
-4
 import java.math.*;
-5
 import java.util.regex.*;
-6
-​
-7
 import java.util.Scanner;
-8
-​
-9
 public class AbundantChecker {
-10
     public static void main(String[] args) {
-11
         Scanner sc = new Scanner(System.in);
-12
+
         int number = sc.nextInt();
-13
+
         int sum = 0;
 14
 ​
@@ -72,13 +34,11 @@ public class AbundantChecker {
         } else {
 24
             System.out.println("Not Abundant Number");
-25
         }
-26
     }
-27
+
 }
-28
+
 ​
 Interview Prep | Blog | Scoring | Environment | FAQ | About Us | Support | Careers | Terms Of Service | Privacy Policy |
 
