@@ -12,28 +12,19 @@ public class AbundantChecker {
         int number = sc.nextInt();
 
         int sum = 0;
-14
-​
-15
         for (int i = 1; i <= number / 2; i++) {
-16
+
             if (number % i == 0) {
-17
+
                 sum += i;
-18
+
             }
-19
-        }
-20
-​
-21
-        if (sum > number) {
-22
-            System.out.println("Abundant Number");
-23
-        } else {
-24
-            System.out.println("Not Abundant Number");
+            }
+             if (sum > number) {
+             System.out.println("Abundant Number");
+
+            } else {
+             System.out.println("Not Abundant Number");
         }
     }
 
