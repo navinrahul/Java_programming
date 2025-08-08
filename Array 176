@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+import java.util.Scanner;
+
+public class FindDoorNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int[] doorNumbers = new int[n];
+        for (int i = 0; i < n; i++) {
+            doorNumbers[i] = scanner.nextInt();
+        }
+        int address = scanner.nextInt();
+        int index = -1;
+        for (int i = 0; i < n; i++) {
+            if (doorNumbers[i] == address) {
+                index = i;
+                break;
+            }
+        }
+        if (index == -1) {
+            System.out.println("-1");
+        } else {
+            System.out.printf("Door Number is %03d-DN\n", index);
+        }
+    }
+}
+
