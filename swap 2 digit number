@@ -4,27 +4,22 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-import java.util.Scanner;
+public class Solution {
 
-public class SwapTwoDigits {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int inputNumber = scanner.nextInt();
-        scanner.close();
-
-        String numStr = String.valueOf(Math.abs(inputNumber));
-
-        if (numStr.length() < 2) {
-            System.out.println("STDOUT");
-            return;
+     Scanner ch = new Scanner(System.in);
+        int n = ch.nextInt();
+        if(n>=10)
+        {
+            char a = String.valueOf(n).charAt(0);
+            char b = String.valueOf(n).charAt(1);
+            System.out.print(b);
+            System.out.print(a);
         }
-
-        char firstDigit = numStr.charAt(0);
-        char secondDigit = numStr.charAt(1);
-
-        String swappedStr = "" + secondDigit + firstDigit;
-
-        int result = Integer.parseInt(swappedStr);
-        System.out.println(result);
+        else
+        {
+            System.out.println("STDOUT");
+        }
+        
     }
 }
