@@ -4,32 +4,17 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-import java.util.Scanner;
+public class Solution {
 
-public class VowelConsonantChecker {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        char ch = sc.next().charAt(0);
-        sc.close();
-
-      
-        char c = Character.toLowerCase(ch);
-
-        if (!Character.isLetter(c)) {
-            System.out.println("Invalid Input");
-            return;
+        Scanner ch=new Scanner(System.in);
+        char chr =ch.next().charAt(0);
+        if(chr=='a' || chr=='e' || chr=='i' || chr=='o' || chr=='u' || chr=='A' || chr=='E' || chr=='I' || chr=='O' || chr=='U'){
+            System.out.println("The Character " + chr + " is Vowel");
         }
+        else{
+            System.out.println("The Character "+ chr +" is Consonant");
 
-        switch (c) {
-            case 'a':
-            case 'e':
-            case 'i':
-            case 'o':
-            case 'u':
-                System.out.println("The Character " + ch + " is Vowel");
-                break;
-            default:
-                System.out.println("The Character " + ch + " is Consonant");
         }
     }
 }
