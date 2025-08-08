@@ -1,35 +1,33 @@
-
 import java.io.*;
 import java.util.*;
 import java.text.*;
 import java.math.*;
 import java.util.regex.*;
+
 import java.util.Scanner;
-public class AbundantChecker {
+
+public class FibonacciRangeSum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
 
-        int number = sc.nextInt();
-
-        int sum = 0;
-        for (int i = 1; i <= number / 2; i++) {
-
-            if (number % i == 0) {
-
-                sum += i;
-
+        if (n < 1 || n > 20 || m < 1 || m > 20) {
+            System.out.println("Invalid Input");
+        } else {
+            int[] fib = new int[21];
+            fib[1] = 0;
+            fib[2] = 1;
+            for (int i = 3; i <= 20; i++) {
+                fib[i] = fib[i - 1] + fib[i - 2];
             }
-            }
-             if (sum > number) {
-             System.out.println("Abundant Number");
 
-            } else {
-             System.out.println("Not Abundant Number");
+            double sum = 0;
+            for (int i = n; i <= m; i++) {
+                sum += fib[i];
+            }
+
+            System.out.println("The Sum of Fibonacci value is " + sum);
         }
     }
-
 }
-
-​
-Interview Prep | Blog | Scoring | Environment | FAQ | About Us | Support | Careers | Terms Of Service | Privacy Policy |
-
