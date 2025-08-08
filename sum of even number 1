@@ -3,13 +3,13 @@ import java.util.*;
 import java.text.*;
 import java.math.*;
 import java.util.regex.*;
-import java.util.Scanner;
-public class Main {
+
+public class Solution {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int m = sc.nextInt();
-        if (n > 0 && n < 30 && m > 0 && m < 30 && n < m) {
+        Scanner ch = new Scanner(System.in);
+        int n = ch.nextInt();
+        int m = ch.nextInt();
+        if ((n > 0 )&& (n < 30) && (m > 0) && (m < 30) && (n <= m)) {
             int sum = 0;
             for (int i = n; i <= m; i++) {
                 if (i % 2 == 0) {
