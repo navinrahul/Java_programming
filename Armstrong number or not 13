@@ -1,23 +1,23 @@
+
 import java.io.*;
 import java.util.*;
 import java.text.*;
 import java.math.*;
 import java.util.regex.*;
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        Scanner ch = new Scanner(System.in);
+        int n = ch.nextInt();
+        int sum = 0;
+        int temp = n;
         if (n >= 100 && n <= 999) {
-            int original = n;
-            int sum = 0;
-            while (n > 0) {
-                int digit = n % 10;
-                sum += digit * digit * digit;
-                n /= 10;
+            while (temp > 0) {
+                int digit = temp % 10;
+                sum += Math.pow(digit, 3);
+                temp /= 10;
             }
-            if (sum == original) {
+            if (sum == n) {
                 System.out.println("Yes");
             } else {
                 System.out.println("No");
