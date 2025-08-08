@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+import java.util.Scanner;
+import java.util.HashSet;
+
+public class DistinctElementsCounter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        HashSet<Integer> set = new HashSet<>();
+        for (int i = 0; i < n; i++) {
+            int num = scanner.nextInt();
+            set.add(num);
+        }
+        int distinctCount = set.size();
+        System.out.println("There " + (distinctCount == 1 ? "are " : "are ") + distinctCount +
+                           " distinct " + (distinctCount == 1 ? "element" : "elements") + " in the array.");
+    }
+}
