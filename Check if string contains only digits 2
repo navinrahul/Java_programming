@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        boolean onlyDigits = !s.isEmpty();
+        for (char c : s.toCharArray()) {
+            if (!Character.isDigit(c)) {
+                onlyDigits = false;
+                break;
+            }
+        }
+        System.out.print(onlyDigits ? "only digits" : "no");
+        sc.close();
+    }
+}
+
+ 
